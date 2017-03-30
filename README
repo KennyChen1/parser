@@ -1,0 +1,10 @@
+Kenny Chen
+
+A parser made in python with the ply library
+
+Run with "python trueSeawolf.py <inputfile>"
+
+supports: functions
+binary and unary operations
+loops
+conditionals

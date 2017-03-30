@@ -1,0 +1,89 @@
+
+
+
+{
+  number = 197;
+  isPrime = 1;
+  i = 2;
+  while(isPrime==1 and i<number) {
+    if (number%i==0) {
+      isPrime = 0;
+    }
+   i = i + 1;
+  }
+  if(isPrime==1){
+    print("isPrime is true");
+  } else {
+    print("isPrime is false");
+  }
+}
+ 
+{
+  data = [ 300, 125, 12, 5, 9943, 9000 ];
+  min = data[0];
+  minIndex = 0;
+  i = 1;
+  while (i < 6){
+    if (data[i] < min){
+       min = data[i];
+       minIndex = i;
+    }
+   i = i + 1;
+  }
+  print(minIndex);
+}
+{
+  number1 = 995;
+  number2 = 764;
+  while(number1 <> number2) {
+    if (number1 > number2) {
+      number1 = number1 - number2;
+    } else {
+      number2 = number2 - number1;
+    }
+  }
+  print("The greatest common divider is: ");
+  print(number1);
+}
+{
+    data = [ [ 12,34 ], [ 56,78 ], [ 90,12 ], [ 13,25 ] ];
+    result = [ 0, 0, 0, 0 ];
+    i = 0;
+    while (i < 4){
+        a = data[i][0];
+        b = data[i][1];
+        if (a > 0){
+            while (b > 0){
+                if (a > b){
+                    a = a - b;
+                } else {
+                    b = b - a;
+                }
+           }
+        }
+        result[i] = a;
+        i = i + 1;
+    }
+    print(result);
+}
+
+
+
+m1(n1){
+  return n1+1;
+}
+{
+  n = 1;
+  print(m1(n+1));
+}
+ 
+ 
+ 
+m2(n2){
+  print(n2);
+}
+{
+  n = 1;
+  m2(n+1+1);
+}
+
